@@ -7,6 +7,12 @@
   <title>Devcamp Products</title>
   <meta name="description" content="Products list for Devcamp" />
   <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <style>
+    .twitter-timeline {
+      max-height: 500px; /* ウィジェットの最大高さを設定 */
+      overflow-y: auto; /* 垂直スクロールを有効にする */
+    }
+  </style>
 </head>
 
 <body>
@@ -72,9 +78,14 @@
     <div class="flex gap-6 w-full max-w-5xl justify-stretch p-6">
       <div class="min-w-[480px] h-[270px] bg-stone-50">
         <!-- X/Twitter -->
+        <label>X/Twitter公式アカウント</label>
+        <a class="twitter-timeline" href="https://twitter.com/classmethod?ref_src=twsrc%5Etfw" data-chrome="nofooter noborders" data-tweet-limit="1">Tweets by @classmethod</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
       <div class="min-w-[480px] h-[270px] bg-stone-50">
         <!-- Youtube -->
+        <label>YouTube公式アカウント</label>
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/4wWeazCpjpU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <div class="w-full max-w-md p-6 bg-stone-50">
